@@ -1,0 +1,40 @@
+{
+    "name": "skylarksoft/authentication",
+    "description": "Authentication Package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shakil Ahmmed",
+            "email": "shakilfci461@gmail.com"
+        },
+        {
+            "name": "Ahzer",
+            "email": "tonmoyazher@gmail.com"
+        },
+        {
+            "name": "Kayser Ahmed",
+            "email": "kayserahmednsu@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "helpers/helpers.php"
+        ],
+        "psr-4": {
+            "SkylarkSoft\\HoneyComb\\Authentication\\": "src/"
+        },
+        "classmap": [
+            "database/seeds"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SkylarkSoft\\HoneyComb\\Authentication\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
